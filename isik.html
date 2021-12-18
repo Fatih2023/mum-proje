@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>lamba</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href=isik.css '>
+    <script src='isik.js '></script>
+<style>
+    button{background-color: #3E8E7E;
+    color: #7CD1B8;
+    text-decoration: none;
+    font-family: Arial;
+    font-size: 20px;
+    padding: 10px 40px;
+    margin: 30px;
+    cursor: pointer;
+    }
+    
+</style>
+
+
+
+</head>
+
+<body>
+
+<center>
+    <br><br>
+<button id="ac" >Aç</button>
+<button id="kapa">Kapat</button>
+
+<br><br><br>
+
+<img id="mum" src="mumk.jpg" width="400" height="600">
+</center>
+<script>
+    const ac=document.getElementById("ac")
+    const kapa=document.getElementById("kapa")
+    const mum=document.getElementById("mum")
+
+    ac.addEventListener("click",function(){
+        mum.setAttribute("src","./muma.jpg")
+    })
+    kapa.addEventListener("click",function(){
+        mum.setAttribute("src","./mumk.jpg")
+    })
+
+</script>
+</body>
+
+</html>
